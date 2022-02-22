@@ -32,3 +32,120 @@ h6 {
   /* height: 80vh; */
   margin-top: 70px;
 }
+
+body {
+  background-image: url("../images/blob-scene-haikei.svg");
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row {
+  border-radius: 15px;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  margin-top: 200px;
+}
+
+div #main_form {
+  width: 90%;
+  display: inline;
+  padding: 30px;
+}
+
+#secondaryLogin {
+  background-color: teal;
+  padding: 20px;
+  color: white;
+  padding-top: 60px;
+  line-height: 2em;
+  vertical-align: middle;
+  text-align: center;
+  border-right: 2px solid #f27d42;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#primaryLogin {
+  background-color: white;
+  padding: 20px;
+  color: black;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.loginHeader {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: teal;
+  padding-top: 20px;
+}
+
+.welcomeHeader {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.inputFields {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 70%;
+  /* margin: auto; */
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+input:focus {
+  border: none;
+}
+
+button {
+  display: block;
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 7px;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid #f27d42;
+  background-color: #f27d42;
+  color: white;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: white;
+  border: 2px solid #f27d42;
+  color: #f27d42;
+  transition: 0.2s;
+}
+
+.custom-shape-divider-top-1644279852 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1644279852 svg {
+  position: relative;
+  display: block;
+  width: calc(157% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1644279852 .shape-fill {
+  fill: #ffffff;
+}
