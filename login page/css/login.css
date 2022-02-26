@@ -35,12 +35,13 @@ h6 {
 
 .row {
   border-radius: 15px;
+  min-height: 70vh;
 }
 
 form {
   width: 80%;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 div #main_form {
@@ -49,14 +50,20 @@ div #main_form {
   padding: 30px;
 }
 
+/* used flex-box align */
 #secondaryLogin {
   background-color: teal;
   padding: 20px;
   color: white;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   line-height: 2em;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   text-align: center;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border-right: 2px solid #f27d42;
   border-radius: 10px 0px 0px 10px;
 }
@@ -64,9 +71,10 @@ div #main_form {
 #primaryLogin {
   background-color: white;
   padding: 20px;
+  padding-top: 20px;
   color: black;
-  vertical-align: middle;
   text-align: center;
+
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -74,10 +82,10 @@ div #main_form {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   color: teal;
-  padding-top: 20px;
   padding: 10px;
-  width: 30%;
+  width: 50%;
   margin: auto;
+  margin-top: 20px;
   border-left: 4px solid teal;
   background-image: linear-gradient(to left, #f4f4f4, #fff);
 }
@@ -94,41 +102,44 @@ div #main_form {
 }
 
 input {
-  width: 70%;
+  width: 50%;
   /* margin: auto; */
   margin-top: 10px;
-  padding: 10px;
-  border: none;
+  padding: 15px;
+  border: 2px solid #f2f2f2;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 input:focus {
   border: none;
+  outline: none;
+  border: 2px solid teal;
+  border-radius: 5px;
 }
 
 button {
   display: block;
-  width: 40%;
+  width: 50%;
   margin: auto;
   margin-top: 30px;
-  padding: 7px;
+  padding: 10px;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   border: 2px solid #f27d42;
   background-color: #f27d42;
   color: white;
   margin-bottom: 30px;
-}
-
-button:hover {
-  background-color: white;
-  border: 2px solid #f27d42;
-  color: #f27d42;
   transition: 0.2s;
 }
 
-.custom-shape-divider-top-1644279852 {
+button:hover {
+  background-color: teal;
+  border: 2px solid teal;
+  color: #fff;
+}
+
+.shapeDivider {
   position: absolute;
   top: 0;
   left: 0;
@@ -137,23 +148,47 @@ button:hover {
   line-height: 0;
 }
 
-.custom-shape-divider-top-1644279852 svg {
+.shapeDivider svg {
   position: relative;
   display: block;
   width: calc(157% + 1.3px);
   height: 150px;
+  margin-top: -px;
 }
 
-.custom-shape-divider-top-1644279852 .shape-fill {
-  fill: #ffffff;
+.shapeDivider .shape-fill {
+  fill: teal;
+}
+.shapeDivider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 @media (max-width: 575.98px) {
   #secondaryLogin {
     border-radius: 0;
     border-right: 0;
+    height: 30vh;
   }
   #primaryLogin {
+    height: 30vh;
     border-radius: 0;
+  }
+  form {
+    margin-top: 0;
+    width: 100%;
+  }
+  body {
+    background-color: white;
+  }
+}
+
+@media (min-width: 575.98px) {
+  .shapeDivider {
+    display: none;
   }
 }
