@@ -168,7 +168,11 @@ button:hover {
   line-height: 0;
 }
 
+/* mobile view media query */
 @media (max-width: 575.98px) {
+  body {
+    font-size: 6vw;
+  }
   #secondaryLogin {
     border-radius: 0;
     border-right: 0;
@@ -185,10 +189,30 @@ button:hover {
   body {
     background-color: white;
   }
+  input,
+  button {
+    width: 80%;
+  }
+  .loginHeader,
+  .welcomeHeader {
+    font-size: 10vw;
+  }
 }
 
 @media (min-width: 575.98px) {
   .shapeDivider {
     display: none;
+  }
+}
+
+/* media for bigger phones to mini laptops/tablets */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #secondaryLogin {
+    border-radius: 0;
+    border-right: 0;
+    height: 30vh;
+  }
+  form {
+    margin-top: 100px;
   }
 }
